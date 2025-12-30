@@ -13,6 +13,7 @@ import Flex007 from './Exercicios/ex027/flex007/index';
 import Flex008 from './Exercicios/ex027/flex008/index';
 import Flex009 from './Exercicios/ex027/flex009/index';
 import Flex010 from './Exercicios/ex027/flex010/index';
+import Flex011 from './Exercicios/ex027/flex011/index';
 
 function App() {
   return (
@@ -33,6 +34,7 @@ function App() {
           <Link to="/ex08" style={{ color: 'blue', marginRight: '10px' }}>08</Link>
           <Link to="/ex09" style={{ color: 'orange', marginRight: '10px' }}>09</Link>
           <Link to="/ex010" style={{ color: 'green', marginRight: '10px' }}>10</Link>
+          <Link to="/ex011" style={{ color: 'orange', marginRight: '10px' }}>11</Link>
         </nav>
 
         {/* ROTAS */}
@@ -50,6 +52,7 @@ function App() {
           <Route path="/ex08" element={<Flex008 />} />  
           <Route path="/ex09" element={<Flex009 />} /> 
           <Route path="/ex010" element={<Flex010 />} /> 
+          <Route path="/ex011" element={<Flex011 />} /> 
           <Route path="*" element={<h2>Página não encontrada</h2>} />
         </Routes>
 
