@@ -1,19 +1,30 @@
-function App() {
-  // O CSS vira um objeto JavaScript
+// src/Exercicios/ex027/flex005/index.jsx
+import React from 'react';
+
+export default function Flex005() {
   const estiloMain = {
-    backgroundColor: 'lightgreen', // background-color virou backgroundColor
-    height: '100vh',
-    width: '100vw',
+    backgroundColor: 'lightgreen',
+    height: '100vh', // Ocupa a tela toda
+    width: '100%',
     display: 'flex',
-    justifyContent: 'center',      // justify-content virou justifyContent
-    alignItems: 'center'
+    justifyContent: 'center', // Centraliza na horizontal (eixo principal)
+    alignItems: 'center'      // Centraliza na vertical (eixo transversal)
   };
 
   return (
-    <main style={estiloMain}>
-      <section style={{ backgroundColor: 'lightseagreen', width: '200px', height: '200px' }}>
-        <h2>Tela de Login</h2>
+    <div style={estiloMain}>
+      <section style={{ 
+          backgroundColor: 'lightseagreen', 
+          width: '200px', 
+          height: '200px',
+          display: 'flex',
+          justifyContent: 'center',
+          alignItems: 'center',
+          boxShadow: '5px 5px 10px rgba(0,0,0,0.3)', // Uma sombrinha pra dar charme
+          borderRadius: '10px' // Borda arredondada
+      }}>
+        <h2>Login</h2>
       </section>
-    </main>
+    </div>
   );
 }
