@@ -1,34 +1,40 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Flexbox</title>
-    <style>
-        div.container{
-            background-color: lightsalmon;
-            display: flex;
-            flex-direction: row;
-            flex-wrap: wrap;
-        }
+import React from 'react';
 
-        div.item{
-            background-color: lightblue;
-            border: 1px solid black;
-            padding: 10px;
-            text-align: center;
-        }
-    </style>
-</head>
-<body>
-    <div class="container">
-        <div class="item">A</div>
-        <div class="item">B</div>
-        <div class="item">C</div>
-        <div class="item">D</div>
-        <div class="item">E</div>
-        <div class="item">F</div>
-        <div class="item">G</div>
+export default function Flex002() {
+  // Dica de React: Podemos criar o estilo aqui fora para o return ficar mais limpo
+  const containerStyle = {
+    backgroundColor: 'lightsalmon',
+    display: 'flex',
+    flexDirection: 'row', // flex-direction virou flexDirection
+    flexWrap: 'wrap',     // flex-wrap virou flexWrap
+    height: '300px'       // Dei uma altura para visualizar melhor
+  };
+
+  const itemStyle = {
+    backgroundColor: 'lightblue',
+    border: '1px solid black',
+    padding: '10px',
+    textAlign: 'center',
+    width: '150px', // Coloquei largura para forçar o Wrap (quebra de linha)
+    margin: '5px'
+  };
+
+  return (
+    <div>
+      <h2>Exercício 2: Flex Wrap</h2>
+      
+      {/* Aqui aplicamos o estilo criado acima */}
+      <div style={containerStyle}>
+        <div style={itemStyle}>A</div>
+        <div style={itemStyle}>B</div>
+        <div style={itemStyle}>C</div>
+        <div style={itemStyle}>D</div>
+        <div style={itemStyle}>E</div>
+        <div style={itemStyle}>F</div>
+        <div style={itemStyle}>G</div>
+        <div style={itemStyle}>H</div>
+        <div style={itemStyle}>I</div>
+      </div>
     </div>
-</body>
-</html>
+  );
+}

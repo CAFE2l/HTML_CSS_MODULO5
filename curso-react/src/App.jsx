@@ -1,40 +1,37 @@
 import React from 'react';
-// 1. Importando as ferramentas de link e rotas
 import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
-
 import './App.css';
 
-// 2. Importando seu exercício (O quadrado colorido)
+// SEUS IMPORTES
 import Flex001 from './Exercicios/ex027/flex001/index';
+import Flex002 from './Exercicios/ex027/flex002/index'; // <--- NOVO
+import Flex003 from './Exercicios/ex027/flex003/index';
+import Flex004 from './Exercicios/ex027/flex004/index';
+
 
 function App() {
   return (
     <BrowserRouter>
       <div style={{ padding: '20px' }}>
         
-        {/* === MENU DE NAVEGAÇÃO (Fica fixo no topo) === */}
+        {/* MENU */}
         <nav style={{ borderBottom: '1px solid white', paddingBottom: '10px', marginBottom: '20px' }}>
           <h2>Menu do Curso</h2>
-          {/* Link é igual a tag <a>, mas não recarrega a página */}
-          <Link to="/" style={{ color: 'white', marginRight: '15px', fontWeight: 'bold' }}>🏠 Início</Link>
-          <Link to="/ex01" style={{ color: 'yellow', fontWeight: 'bold' }}>Exercício 01 (Flexbox)</Link>
+          <Link to="/" style={{ color: 'white', marginRight: '15px' }}>🏠 Início</Link>
+          <Link to="/ex01" style={{ color: 'yellow', marginRight: '15px' }}>Flex 01</Link>
+          <Link to="/ex02" style={{ color: 'lightgreen' }}>Flex 02 (Wrap)</Link>
+          <Link to="/ex03" style={{ color: 'cyan', marginLeft: '10px' }}>Flex 03</Link>
+          <Link to="/ex04" style={{ color: 'orange', marginLeft: '10px' }}>Flex 04</Link>
         </nav>
 
-        {/* === ONDE AS PÁGINAS MUDAM === */}
+        {/* ROTAS */}
         <Routes>
-          {/* Rota da Home */}
-          <Route path="/" element={
-            <div style={{color: 'white'}}>
-              <h1>Bem-vindo!</h1>
-              <p>Clique nos links acima para ver seus exercícios.</p>
-            </div>
-          } />
-
-          {/* Rota do Exercício 01 */}
+          <Route path="/" element={<h1>Bem-vindo ao Curso!</h1>} />
           <Route path="/ex01" element={<Flex001 />} />
-          
-          {/* Rota para erro (se digitar url errada) */}
-          <Route path="*" element={<h2 style={{color: 'red'}}>Página não encontrada</h2>} />
+          <Route path="/ex02" element={<Flex002 />} />
+          <Route path="/ex03" element={<Flex003 />} />
+          <Route path="/ex04" element={<Flex004 />} />
+          <Route path="*" element={<h2>Página não encontrada</h2>} />
         </Routes>
 
       </div>
