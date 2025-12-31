@@ -2,58 +2,77 @@ import React from 'react';
 
 export default function Flex002() {
   
-  // 1. O container principal (fingindo ser o body)
   const bodyStyle = {
     fontFamily: 'Arial, Helvetica, sans-serif',
-    fontSize: '1em',
-    backgroundColor: 'grey',
-    minHeight: '100vh', // Ocupa a altura total da tela
+    backgroundColor: 'lightgrey', // Cor do fundo da página
+    minHeight: '100vh',
     width: '100vw',
-    display: 'flex',      // Já deixei preparado pra você brincar
-    flexDirection: 'column',
-    margin: 0,
-    padding: 0
+    fontSize: '1em',
   };
 
   const headerStyle = {
-    backgroundColor: 'lightgrey',
-    color: 'black',
-    padding: '20px',
-  };
-
-  const mainStyle = {
-    backgroundColor: 'white',
-    margin: '20px',
-    padding: '20px',
-    borderRadius: '10px',
-    // Havia um erro de parênteses aqui embaixo
-    boxShadow: '2px 2px 3px rgba(0, 0, 0, 0.336)', 
+    backgrouColor: 'black',
+    color: 'white',
+    padding: '10px',
+    display: 'flex',
+    flexFLow: 'row wrap',
+    justifyContent: 'space-between',
+    alignItems: 'center',
   };
 
   const h1Style = {
-    border: '1px dotted black',
-    margin: 0, // Tirar margem padrão do navegador
+   border: '1px dotted black',
+   flex: '0 0 200px',
   };
 
   const navStyle = {
-    border: '1px dotted red', // Mudei pra vermelho pra você ver melhor
-    marginTop: '10px',
-    padding: '10px'
+    border: '1px dotted black',
+    display: 'flex',
+    flexFlow: 'row nowrap',
+    justifyContent: 'flex-end',s
   };
 
-  // Estilo extra para os links não ficarem colados
+  // ESTILO DOS BOTÕES (PRETO COM TEXTO BRANCO)
+    // Estilo extra para os links não ficarem colados
   const linkStyle = {
-    marginRight: '15px',
-    textDecoration: 'none',
-    color: 'blue',
+    backgroundColor: 'black',
+    color: 'white',
+    padding: '10px',
+    margin: '5px',
+    borderRadius: '5px',
+    textDecoration :'none',
+    textAlign: 'center',
+  };
+
+  // --- AQUI ESTÁ A MÁGICA DAS 3 COLUNAS ---
+  const mainStyle = {
+    backgroundColor: 'white',
+    color: 'black',
+    transition: 'background-color .5s',
+
+};
+
+  // Estilo específico pro Título H2 (Coluna 1)
+  const h2Style = {
+    minWidth: '150px', // Força ele a ter uma largura fixa pra não esmagar
+    margin: 0,
+    fontSize: '1.5rem',
+    color: 'black',
     fontWeight: 'bold'
   };
 
+  // Estilo pros Parágrafos (Colunas 2 e 3)
+  const pStyle = {
+    flex: 1, // "flex: 1" manda o parágrafo ocupar todo o espaço sobrando
+    margin: 0,
+    lineHeight: '1.5', // Altura da linha pra ficar legível
+    fontSize: '1rem',
+    color: '#333'
+  };
+
   return (
-    // 2. NUNCA use a tag <body> aqui dentro. Use uma <div>.
     <div style={bodyStyle}> 
       
-      {/* 3. Você precisa conectar a variável de estilo na tag usando style={} */}
       <header style={headerStyle}>
           <h1 style={h1Style}>Meu site</h1>
           
@@ -67,11 +86,22 @@ export default function Flex002() {
           </nav>
       </header>
 
+      {/* AGORA SÃO 3 FILHOS DIRETOS: H2, P, P */}
       <main style={mainStyle}>
-          <h2>Teste de FlexBox</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde reiciendis, quia debitis nulla quam ex nemo rem soluta doloribus ullam dolorem vero.</p>
-          <br/>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit voluptatum soluta, minima culpa aperiam dolores.</p>
+          
+          {/* Filho 1: Título */}
+          <h2 style={h2Style}>Teste de FlexBox</h2>
+          
+          {/* Filho 2: Parágrafo 1 */}
+          <p style={pStyle}>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde reiciendis, quia debitis nulla quam ex nemo rem soluta doloribus ullam dolorem vero, iure eos provident temporibus commodi ipsam. Accusantium, quod.
+          </p>
+          
+          {/* Filho 3: Parágrafo 2 */}
+          <p style={pStyle}>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit voluptatum soluta, minima culpa aperiam dolores. Atque, quo iusto praesentium delectus harum maiores, deleniti, mollitia enim vitae voluptates facilis omnis! Qui.
+          </p>
+      
       </main>
 
     </div> 
