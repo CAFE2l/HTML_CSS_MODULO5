@@ -16,30 +16,24 @@ export default function Flex004() {
 
 
   const cxA = {
-        backgroundColor: 'lightskyblue',
+    backgroundColor: 'lightskyblue',
     border: '1px solid black',
     textAlign: 'center',
-    flexBasis: '200px',
-    flexShrink: "0",
-    flexGrow: "1",
+    flex: '1 0 200px',
   };
 
   const cxB = {
-        backgroundColor: 'lightskyblue',
+    backgroundColor: 'lightskyblue',
     border: '1px solid black',
     textAlign: 'center',
-    flexBasis: '200px',
-    flexShrink: "1",
-    flexGrow: "1",
+    flex: '1 1 150px',
   };
   
   const cxC = {
-        backgroundColor: 'lightskyblue',
+    backgroundColor: 'lightskyblue',
     border: '1px solid black',
     textAlign: 'center',
-    flexBasis: '200px',
-    flexShrink: "8",
-    flexGrow: "1",
+    flex: '1 8 auto',
   };
 
   return (
