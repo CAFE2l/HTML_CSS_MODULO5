@@ -3,20 +3,20 @@ import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
 import './App.css';
 
 // IMPORTES
-import Flex001 from './Exercicios/ex027/flex001/index';
-import Flex002 from './Exercicios/ex027/flex002/index';
-import Flex003 from './Exercicios/ex027/flex003/index';
-import Flex004 from './Exercicios/ex027/flex004/index';
-import Flex005 from './Exercicios/ex027/flex005/index';
-import Flex006 from './Exercicios/ex027/flex006/index';
-import Flex007 from './Exercicios/ex027/flex007/index';
-import Flex008 from './Exercicios/ex027/flex008/index';
-import Flex009 from './Exercicios/ex027/flex009/index';
-import Flex010 from './Exercicios/ex027/flex010/index';
-import Flex011 from './Exercicios/ex027/flex011/index';
-import Flex012 from './Exercicios/ex027/flex012/index';
-import Flex013 from './Exercicios/ex027/flex013/index';
-import Flex014 from './Exercicios/ex027/flex014/index';
+import Flex001 from './Exercicios/cap27/flex001/index';
+import Flex002 from './Exercicios/cap27/flex002/index';
+import Flex003 from './Exercicios/cap27/flex003/index';
+import Flex004 from './Exercicios/cap27/flex004/index';
+import Flex005 from './Exercicios/cap27/flex005/index';
+import Flex006 from './Exercicios/cap27/flex006/index';
+import Flex007 from './Exercicios/cap27/flex007/index';
+import Flex008 from './Exercicios/cap27/flex008/index';
+import Flex009 from './Exercicios/cap27/flex009/index';
+import Flex010 from './Exercicios/cap27/flex010/index';
+import Flex011 from './Exercicios/cap27/flex011/index';
+import Flex012 from './Exercicios/cap27/flex012/index';
+import Flex013 from './Exercicios/cap27/flex013/index';
+import Flex014 from './Exercicios/cap27/flex014/index';
 
 function App() {
   const navItems = [
