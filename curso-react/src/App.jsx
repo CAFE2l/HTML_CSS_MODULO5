@@ -16,6 +16,7 @@ import Flex010 from './Exercicios/ex027/flex010/index';
 import Flex011 from './Exercicios/ex027/flex011/index';
 import Flex012 from './Exercicios/ex027/flex012/index';
 import Flex013 from './Exercicios/ex027/flex013/index';
+import Flex014 from './Exercicios/ex027/flex014/index';
 
 function App() {
   const navItems = [
@@ -31,7 +32,8 @@ function App() {
     { path: '/ex010', label: '10', gradient: 'from-green-400 to-emerald-500' },
     { path: '/ex011', label: '11', gradient: 'from-yellow-400 to-amber-500' },
     { path: '/ex012', label: '12', gradient: 'from-indigo-500 to-blue-600' },
-     {path: '/ex013', label: '13', gradient: 'from-indigo-500 to-blue-600' },
+    {path: '/ex013', label: '13', gradient: 'from-indigo-500 to-blue-600' },
+    {path: '/ex014', label: '14', gradient: 'from-indigo-500 to-blue-600' },
   ];
 
   return (
@@ -219,6 +221,7 @@ function App() {
                     <Route path="/ex011" element={<Flex011 />} /> 
                     <Route path="/ex012" element={<Flex012 />} /> 
                     <Route path="/ex013" element={<Flex013 />} /> 
+                    <Route path="/ex014" element={<Flex014 />} /> 
                     {/* 404 PAGE */}
                     <Route path="*" element={
                       <div className="text-center py-20">
