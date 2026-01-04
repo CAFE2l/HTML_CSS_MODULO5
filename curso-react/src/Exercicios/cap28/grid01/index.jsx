@@ -4,8 +4,8 @@ export default function  Flex002() {
     
 
   return (
-    <body> 
-      <div className="contaier">
+  
+      <div className="container">
         <div className="item">A</div>
         <div className="item">B</div>
         <div className="item">C</div>
@@ -15,6 +15,6 @@ export default function  Flex002() {
         <div className="item">G</div>
       </div>
 
-    </body> 
+
   );
 }
