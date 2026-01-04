@@ -1,0 +1,17 @@
+div.container{
+    border: 3px solid blue;
+    height: 250px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto auto;
+    gap: 10px;
+    align-items: normal;
+    align-content: normal;
+    justify-content: normal;
+    justify-items: normal;
+}
+
+div.item{
+    border: 3px solid red;
+    padding: 5px;
+}
