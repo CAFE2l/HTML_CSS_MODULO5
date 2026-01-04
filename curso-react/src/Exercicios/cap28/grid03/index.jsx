@@ -13,6 +13,9 @@ export default function  Flex002() {
         <div className="item">E</div>
         <div className="item">F</div>
         <div className="item">G</div>
+        <div className="item">H</div>
+        <div className="item">I</div>
+        <div className="item">J</div>
       </div>
 
 
