@@ -21,6 +21,7 @@ import Grid01 from './Exercicios/cap28/grid01/index';
 import Grid02 from './Exercicios/cap28/grid02/index';
 import Grid03 from './Exercicios/cap28/grid03/index';
 import Grid04 from './Exercicios/cap28/grid04/index';
+import Grid05 from './Exercicios/cap28/grid05/index';
 
 function App() {
   const navItems = [
