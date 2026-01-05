@@ -42,6 +42,7 @@ function App() {
     {path: '/grid02', label: '02', gradient: 'from-indigo-500 to-blue-600' },
     {path: '/grid03', label: '03', gradient: 'from-indigo-500 to-blue-600' },
     {path: '/grid04', label: '04', gradient: 'from-indigo-500 to-blue-600' },
+    {path: '/grid05', label: '05', gradient: 'from-indigo-500 to-blue-600' },
   ];
 
   return (
@@ -234,6 +235,7 @@ function App() {
                     <Route path="/grid02" element={<Grid02 />} /> 
                     <Route path="/grid03" element={<Grid03 />} /> 
                     <Route path="/grid04" element={<Grid04 />} /> 
+                    <Route path="/grid05" element={<Grid05 />} /> 
                     {/* 404 PAGE */}
                     <Route path="*" element={
                       <div className="text-center py-20">
