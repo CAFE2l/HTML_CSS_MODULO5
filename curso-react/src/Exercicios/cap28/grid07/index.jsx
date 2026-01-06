@@ -9,8 +9,8 @@ export default function  Flex002() {
       <div className="caixa1">Caixa01</div>
       <div className="caixa2">Caixa02</div>
       <div className="caixa3">Caixa03</div>
-      <div className="caixa3">Caixa04</div>
-      <div className="caixa3">Caixa05</div>
+      <div className="caixa4">Caixa04</div>
+      <div className="caixa5">Caixa05</div>
     </div>
 
   
