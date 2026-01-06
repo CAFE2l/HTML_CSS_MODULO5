@@ -24,6 +24,7 @@ import Grid04 from './Exercicios/cap28/grid04/index';
 import Grid05 from './Exercicios/cap28/grid05/index';
 import Grid06 from './Exercicios/cap28/grid06/index';
 import Grid07 from './Exercicios/cap28/grid07/index';
+import Grid08 from './Exercicios/cap28/grid08/index';
 
 function App() {
   const navItems = [
@@ -48,6 +49,7 @@ function App() {
     {path: '/grid05', label: '05', gradient: 'from-indigo-500 to-blue-600' },
     {path: '/grid06', label: '06', gradient: 'from-indigo-500 to-blue-600' },
     {path: '/grid07', label: '07', gradient: 'from-indigo-500 to-blue-600' },
+    {path: '/grid08', label: '08', gradient: 'from-indigo-500 to-blue-600' },
   ];
 
   return (
@@ -243,6 +245,7 @@ function App() {
                     <Route path="/grid05" element={<Grid05 />} /> 
                     <Route path="/grid06" element={<Grid06 />} /> 
                     <Route path="/grid07" element={<Grid07 />} /> 
+                    <Route path="/grid08" element={<Grid08 />} /> 
                     {/* 404 PAGE */}
                     <Route path="*" element={
                       <div className="text-center py-20">
@@ -269,21 +272,7 @@ function App() {
             </div>
 
             {/* FOOTER DO CARD */}
-            <div className="mt-8 flex items-center justify-between text-sm text-gray-500">
-              <div className="flex items-center space-x-4">
-                <span className="flex items-center">
-                  <div className="w-2 h-2 rounded-full bg-emerald-500 mr-2" />
-                  Online
-                </span>
-                <span>Flexbox MasterClass v1.0</span>
-              </div>
-              <div className="flex items-center space-x-4">
-                <span>React 18 + React Router 6</span>
-                <span className="px-3 py-1 rounded-full bg-gradient-to-r from-violet-500/10 to-cyan-500/10 text-violet-300">
-                  Vite Inspired
-                </span>
-              </div>
-            </div>
+         
           </div>
         </main>
       </div>
